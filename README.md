@@ -6,7 +6,7 @@
 
 #### 🚀 Overview
 
-This project implements a **Fine-Grained Image Classification (FGIC)** model to detect car **make and model** using the [Stanford Cars Dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html). The main focus is on distinguishing between visually similar car types using advanced deep learning techniques.
+This project implements a **Fine-Grained Image Classification (FGIC)** model to detect car **make and model** using the [Stanford Cars Dataset](https://www.kaggle.com/datasets/eduardo4jesus/stanford-cars-dataset). The main focus is on distinguishing between visually similar car types using advanced deep learning techniques.
 
 ------
 
@@ -66,13 +66,13 @@ This project implements a **Fine-Grained Image Classification (FGIC)** model to 
 
 #### 📊 Results
 
-| Metric              | Accuracy                                        |
-| ------------------- | ----------------------------------------------- |
-| **Top-1 Val Acc**   | 87.54%                                          |
-| **Top-5 Val Acc**   | 97.85%                                          |
-| **Top-1 Train Acc** | 98.04%                                          |
-| **Top-5 Train Acc** | 100.00%                                         |
-| **Test Accuracy**   | ⚠️ 0.65% *(appears misreported or needs review)* |
+| Metric              | Accuracy |
+| ------------------- | -------- |
+| **Top-1 Val Acc**   | 87.54%   |
+| **Top-5 Val Acc**   | 97.85%   |
+| **Top-1 Train Acc** | 98.04%   |
+| **Top-5 Train Acc** | 100.00%  |
+| **Test Accuracy**   | 0.65%    |
 
 
 
@@ -84,7 +84,6 @@ This project implements a **Fine-Grained Image Classification (FGIC)** model to 
 #### 🛠️ Dependencies
 
 ```
-bashCopyEdittorch
 torchvision
 numpy
 matplotlib
