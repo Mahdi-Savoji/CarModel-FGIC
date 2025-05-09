@@ -70,10 +70,14 @@ This project implements a **Fine-Grained Image Classification (FGIC)** model to 
 
 | Metric              | Accuracy |
 | ------------------- | -------- |
-| **Top-1 Val Acc**   | 87.54%   |
-| **Top-5 Val Acc**   | 97.85%   |
-| **Top-1 Train Acc** | 98.04%   |
-| **Top-5 Train Acc** | 100.00%  |
+| **Top-1 Val Acc**   | 92.63%   |
+| **Top-5 Val Acc**   | 98.87%   |
+| **Val Recall**      | 88%      |
+| **Val Precision**   | 89%      |
+| **Top-1 Train Acc** | 97.26%   |
+| **Top-5 Train Acc** | 99.95%   |
+| **Train Recall**    | 95%      |
+| **Train Precisoin** | 95%      |
 
 
 
