@@ -72,7 +72,6 @@ This project implements a **Fine-Grained Image Classification (FGIC)** model to 
 | **Top-5 Val Acc**   | 97.85%   |
 | **Top-1 Train Acc** | 98.04%   |
 | **Top-5 Train Acc** | 100.00%  |
-| **Test Accuracy**   | 0.65%    |
 
 
 
