@@ -76,7 +76,6 @@ This project implements a **Fine-Grained Image Classification (FGIC)** model to 
 
 
 > ✅ Model trained for 16 epochs with early stopping.
->  ⚠️ The test accuracy may need verification due to its unexpectedly low value.
 
 ------
 
