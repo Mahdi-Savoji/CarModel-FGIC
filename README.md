@@ -1,12 +1,12 @@
 ### 📦 CarModel-FGIC
 
-**Fine-Grained Car Model Classification using the Stanford Cars Dataset**
+**Fine-Grained Car Model Classification using Stanford Cars + Iran Cars Datasets**
 
 ------
 
 #### 🚀 Overview
 
-This project implements a **Fine-Grained Image Classification (FGIC)** model to detect car **make and model** using the [Stanford Cars Dataset](https://www.kaggle.com/datasets/eduardo4jesus/stanford-cars-dataset). The main focus is on distinguishing between visually similar car types using advanced deep learning techniques.
+This project implements a **Fine-Grained Image Classification (FGIC)** model to detect car **make and model** using both the [Stanford Cars Dataset](https://www.kaggle.com/datasets/eduardo4jesus/stanford-cars-dataset) and an additional [Iran Cars Dataset](https://www.kaggle.com/datasets/usefashrfi/iran-used-cars-dataset). The main focus is on distinguishing between visually similar car types using advanced deep learning techniques.
 
 ------
 
@@ -24,7 +24,7 @@ This project implements a **Fine-Grained Image Classification (FGIC)** model to 
 #### 🧠 Model Highlights
 
 - Based on transfer learning using models like **ResNet**, **EfficientNet**, or a hybrid (ResNet + VGG + CBAM + Cross-Attention).
-- Supports **fine-grained classification** of 196 car classes.
+- Supports **fine-grained classification** across combined classes from both datasets.
 - Incorporates **bilinear pooling**, **channel & spatial attention (CBAM)**, and **cross-attention** to improve feature interaction.
 - Uses data augmentation and balanced sampling for better generalization.
 - Evaluation includes Top-1 and Top-5 accuracy metrics.
@@ -33,14 +33,15 @@ This project implements a **Fine-Grained Image Classification (FGIC)** model to 
 
 #### 🗃 Dataset
 
-- **Source**:
+- **Sources**:
   - [Stanford Cars Dataset](https://www.kaggle.com/datasets/eduardo4jesus/stanford-cars-dataset)
   - [Cropped Stanford Cars Dataset](https://www.kaggle.com/datasets/mahdisavoji/croppedstanfordcardataset)
-- **Images**: 16,185 car images
-- **Labels**: 196 car makes and models
-- **Format**: `.mat` annotations and `.jpg` images
+  - [Iran Cars Dataset](https://www.kaggle.com/datasets/usefashrfi/iran-used-cars-dataset)
+- **Images**: Combined total of car images from both datasets
+- **Labels**: Unified set of car make and model classes
+- **Format**: `.mat` annotations and `.jpg` images for Stanford, standard image files and metadata for Iran Cars
 
-> Preprocessing crops each image based on bounding box annotations and organizes them by class folder.
+> Preprocessing crops each image based on bounding box annotations (Stanford) or custom bounding boxes (Iran), and organizes them by class.
 
 ------
 
@@ -55,8 +56,9 @@ This project implements a **Fine-Grained Image Classification (FGIC)** model to 
 
 2. Prepare the dataset:
 
-   - Download the dataset from [here](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
-   - Run `CreateCroppedDataset.ipynb` to preprocess images
+   - Download the Stanford dataset from [here](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
+   - Collect/preprocess the Iran Cars dataset (images + bounding boxes)
+   - Run `CreateCroppedDataset.ipynb` to crop and organize both datasets
 
 3. Train the model:
 
@@ -75,7 +77,7 @@ This project implements a **Fine-Grained Image Classification (FGIC)** model to 
 
 
 
-> ✅ Model trained for 16 epochs with early stopping.
+> ✅ Model trained for 16 epochs with early stopping, using a mix of Stanford and Iran car images.
 
 ------
 
@@ -95,4 +97,3 @@ Install all dependencies with:
 ```
 pip install -r requirements.txt
 ```
-
