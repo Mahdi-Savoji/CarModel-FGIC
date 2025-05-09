@@ -62,7 +62,7 @@ This project implements a **Fine-Grained Image Classification (FGIC)** model to 
 
 3. Train the model:
 
-   - Open and run `CarModel-FGIC.ipynb` in Jupyter or Colab
+   - Open and run `CarModel-FGIC(StanfordCars+IranCars).ipynb` in Jupyter or Colab
 
 ------
 
