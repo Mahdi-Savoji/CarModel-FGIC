@@ -81,7 +81,7 @@ This project implements a **Fine-Grained Image Classification (FGIC)** model to 
 
 
 
-> ✅ Model trained for 16 epochs with early stopping, using a mix of Stanford and Iran car images.
+> ✅ Model trained for 10 epochs with early stopping, using a mix of Stanford and Iran car images.
 
 ------
 
